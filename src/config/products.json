@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Nastar Klasik",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 2,
+    "name": "Nastar Gulung",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 3,
+    "name": "Nastar Bunga",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 4,
+    "name": "Putri Salju",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 5,
+    "name": "Kastengel",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 6,
+    "name": "Kue Kacang",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 7,
+    "name": "Thumpring",
+    "variants": [
+      "Strawberry (Toples Bulat 500g / Jar 500g)",
+      "Cokelat Kacang (Toples Bulat 500g / Jar 500g)",
+      "Cokelat Keju (Toples Bulat 500g / Jar 500g)"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Coklat Mete",
+    "variants": ["Toples Persegi 350g"]
+  },
+  {
+    "id": 9,
+    "name": "Nastar Cokelat",
+    "variants": ["Toples Bulat 500g", "Toples Jar 500g"]
+  },
+  {
+    "id": 10,
+    "name": "Coklat Stik",
+    "variants": ["Toples Persegi 350g"]
+  },
+  {
+    "id": 11,
+    "name": "Kacang Bawang",
+    "variants": ["500g"]
+  },
+  {
+    "id": 12,
+    "name": "Kacang Telur",
+    "variants": ["500g"]
+  }
+]
