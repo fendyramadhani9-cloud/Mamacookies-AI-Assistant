@@ -1,134 +1,179 @@
-# 🍪 MamaCookies AI WhatsApp Bot
+# MamaCookies AI WhatsApp Bot
 
-AI-powered WhatsApp bot for handling pre-orders (PO) of homemade cookies.
+AI-powered WhatsApp bot designed to handle pre-orders for a homemade cookies business.
 
-Built with Node.js, Baileys, MongoDB, and local AI (Ollama - Qwen).
-
----
-
-## 🚀 Features
-
-- 🤖 AI Chat Assistant (Local AI - Qwen)
-- 🛒 Pre-order system (PO)
-- 📦 Order management with MongoDB
-- 📲 WhatsApp automation (Baileys)
-- 🧾 Auto order ID generator
-- 🔔 Admin notification system
+This project combines WhatsApp automation, local AI (Ollama + Qwen), and MongoDB to create an intelligent ordering assistant capable of handling customer interactions without relying on external AI APIs.
 
 ---
 
-## 🧠 AI Capability
+## Features
 
-This bot uses **local AI (Ollama - Qwen model)** to:
+- AI-powered WhatsApp assistant
+- Pre-order (PO) management system
+- MongoDB-based order storage
+- WhatsApp automation using Baileys
+- Automatic order ID generation
+- Admin notification system
+
+---
+
+## AI Capability
+
+The bot uses a locally hosted Qwen model through Ollama to:
+
 - Answer customer questions
 - Recommend products
 - Handle casual conversations
-
-No external API required.
+- Operate completely offline without external AI APIs
 
 ---
 
-## 🏗️ Tech Stack
+## Technology Stack
 
 - Node.js
 - Baileys (WhatsApp Web API)
 - MongoDB
-- Ollama (Local AI)
+- Ollama
+- Qwen2.5
 - Axios
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-
+```text
 src/
 ├── core/
-│ ├── bot.js
-│ ├── router.js
-│ └── sessionManager.js
+│   ├── bot.js
+│   ├── router.js
+│   └── sessionManager.js
 │
 ├── features/
-│ ├── aiChat/
-│ ├── preorder/
-│ ├── catalog/
-│ └── adminNotify/
+│   ├── aiChat/
+│   ├── preorder/
+│   ├── catalog/
+│   └── adminNotify/
 │
 ├── database/
-│ └── models/
+│   └── models/
 │
 └── utils/
-
+```
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1. Clone repository
+### 1. Clone Repository
+
 ```bash
 git clone https://github.com/USERNAME/mamacookies-ai-bot.git
+
 cd mamacookies-ai-bot
-2. Install dependencies
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
-3. Setup environment
+```
 
-Create .env file:
+### 3. Configure Environment
 
+Create a `.env` file.
+
+```env
 MONGO_URI=mongodb://127.0.0.1:27017/mamacookies
+
 ADMIN_NUMBER=628xxxxxxxxxx@s.whatsapp.net
+
 MAPS_LINK=https://maps.google.com/...
-4. Run MongoDB
+```
 
-Make sure MongoDB is running locally.
+### 4. Start MongoDB
 
-5. Run AI (Ollama)
+Make sure your local MongoDB server is running.
+
+### 5. Start Ollama
+
+```bash
 ollama run qwen2.5:7b
-6. Start bot
+```
+
+### 6. Run the Bot
+
+```bash
 npm start
+```
 
-Scan QR code from WhatsApp.
+Scan the QR code using WhatsApp to authenticate the session.
 
-📌 Usage
-Customer Commands
+---
 
-.menu → View product catalog
+## Usage
 
-.pesan → Start order
+### Customer Commands
 
-Chat normally → AI will respond
+| Command | Description |
+|----------|-------------|
+| `.menu` | View product catalog |
+| `.pesan` | Start a new order |
+| Normal chat | AI responds automatically |
 
-Admin
+### Admin Commands
 
-.list → View all orders
+| Command | Description |
+|----------|-------------|
+| `.list` | View all customer orders |
 
-🛒 Order Flow
+---
 
-Customer starts order (.pesan)
+## Order Workflow
 
-Input name
+1. Customer starts an order using `.pesan`
+2. Customer enters name
+3. Customer selects products and quantity
+4. Customer confirms the order
+5. Order is stored in MongoDB
+6. Admin receives an order notification
 
-Input items + quantity
+---
 
-Confirm order
+## Preview
 
-Data saved to MongoDB
+The project includes a WhatsApp AI assistant capable of handling real customer conversations and pre-order requests.
 
-Admin receives notification
+Screenshots can be added to demonstrate:
 
-📸 Preview
+- QR Login
+- WhatsApp Conversation
+- Order Processing
+- MongoDB Data
+- Terminal Output
 
-WhatsApp AI bot handling real customer order conversation.
+---
 
-🧠 Future Improvements
+## Future Improvements
 
-Payment integration
+- Payment gateway integration
+- Web dashboard
+- Order status tracking
+- Multi-admin support
 
-Web dashboard
+---
 
-Order status tracking
+## Author
 
-Multi-admin support
+**Fendy Ramadhani**
 
-👨‍💻 Author
+TJKT Student | AI & Cloud enthusias
 
-Fendy Ramadhani
-Vocational student (TJKT) | AI & Backend Enthusias
+GitHub  : https://github.com/fendyramadhani9-cloud
+Email   : fendyramadhani9@gmail.com
+LinkedIn: https://www.linkedin.com/in/fendy-ramadhani9
+
+---
+
+## License
+
+This project is intended for educational and portfolio purposes.
